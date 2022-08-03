@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BMI Calculator</title>
+	<meta name="description" content="Free Body Mass Index calculator gives out the BMI value and categorizes BMI based on provided information from WHO and CDC for both adults and children." />
+	<link rel="stylesheet" href="styles.css"><script src="//d26tpo4cm8sb6k.cloudfront.net/js/common.js" async></script>	<link rel="apple-touch-icon" sizes="180x180" href="//d26tpo4cm8sb6k.cloudfront.net/apple-touch-icon.png">
+	
+	<link rel="manifest" href="/manifest.json"></head><body><div id="headerout">
+	<div id="header">
+		<div id="logo"><a href="/"><img src="calculator-white.svg" width="208" height="22"></a></div>
+			</div>
+</div>
+<div id="clear"></div><div id="contentout"><div id="content"><div id="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">home</span></a><meta itemprop="position" content="1" /></span> / <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/fitness-and-health-calculator.html" itemprop="item"><span itemprop="name">fitness &amp; health</span></a><meta itemprop="position" content="2" /></span> / <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/bmi-calculator.html" itemprop="item"><span itemprop="name">bmi calculator</span></a><meta itemprop="position" content="3" /></span></div><div id="printit"><a href="#" onClick="document.calform.printit.value=1;document.calform.submit();return false;">Print</a></div>		<h1>BMI Calculator</h1>
+<div id="insmdc"><img src="insm.svg"></div>
+<span id="ucframe"></span>
+<div class="leftinput">
+<div id="topmenu" class="topmenucenter"><ul><li id='menuon'><a href="#" onclick="popMenu('standard');">US units</a></li> <li><a href="#" onclick="popMenu('metric');">metric units</a></li> <li><a href="#" onclick="popMenu('other');">other units</a></li></ul></div>
+<div class="panel2">
+<table border="0" cellpadding="0" cellspacing="0" align="center"><tr><td>
+<table id="calinputtable" width="300">
+<form name="calform">
+<input type="hidden" name="ctype" id="ctype" value="metric">
+
+<tr>
+	
+
+
+
+<div id="box">
+	<div id="content">
+		<script src="bmi.js"></script>
+	  <div class="inp_box">
+		<input
+		  type="number"
+		  value="60"
+		  id="weight_inp"
+		  placeholder="Weight in Kg ..."
+		/>
+		<span>kg</span>
+	  </div>
+	  <div class="inp_box">
+		<input
+		  type="number"
+		  value="157"
+		  id="height_inp"
+		  placeholder="Height in cm ..."
+		/>
+		<span>cm</span>
+	  </div>
+	  <div id="out_box">
+		<input type="range" id="bmi_range" min="0" max="450" disabled />
+		<div id="scale"></div>
+		<div id="bmi_result">BMI : 30.8</div>
+		<div id="bmi_status">underweight</div>
+	  </div>
+	</div>
+	
+	  </a>
+	</div>
+  </div>
+  <br>
+  <p>The Body Mass Index (BMI) Calculator can be used to calculate BMI value and corresponding weight status while taking age into consideration. Use the "Metric Units" tab for the International System of Units or the "Other Units" tab to convert units into either US or metric units. Note that the calculator also computes the Ponderal Index in addition to BMI, both of which are discussed below in detail.</p>
+
+</body>
+</html>
